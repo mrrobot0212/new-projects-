@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page-1{
+ padding: 45px;
+ width: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(212, 232, 232);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.main-banner{
+    height: 852px;
+    width: 393px;
+    border-radius: 20px;
+    background-color: rgb(57, 40, 74);
+}
+.picture-1{
+    flex-flow: vertical;
+    width: 105px;
+    height: 167px;
+    margin-top: 56px;
+    margin-left: 144px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-1{
+    background-image: url(../m3/bmwm3.png);
+    height: 95px;
+    width: 95px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.img-content{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+.picture-1 h4{
+    color:#FCFCFC;
+    text-transform: uppercase;
+    font-size: 700;
+    margin-left: 10px;
+    font-weight: 600px;
+    
+}
+.picture-1 p{
+    color:#F5F5F5;
+    font-size: 15px;
+    font-style: light;
+text-transform: capitalize;
+line-height: 100%;
+font-weight: 300;
+
+}
+.icons-1{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-size: 20px;
+    cursor: progress;
+}
+.manubar{
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    margin-top: 28px;
+
+}
+.manubar ol{
+    font-size: 10px;
+    color: #FCFCFC;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 100%;
+    cursor: pointer;
+
+}
+.manubar :hover{
+    color: rgb(255, 254, 251);
+    transition: 0.2s ease-in-out;
+}
+li:hover a { 
+    color: black;
+    padding: 10px 12px;
+    background-color: #9398ce;
+    border-radius: 10px;
+
+}
+.fouter{
+    margin-top: 16px;
+    margin-left: 34px;
+    height: 510px;
+    width: 326px;
+  
+    
+
+}
+.about-me{
+    /* margin: 20px 30px 0 10px; */
+    background-color:#3D3F54;
+    width: 100%;
+    border: #3D3F54 solid;
+    border-radius: 10px;
+    
+
+}
+.about-me h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFFD1;
+    opacity: 82%;
+    margin-top: 13px;
+    margin-left: 13px;
+
+    
+
+}
+.about-me p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 142%;
+    letter-spacing: 0.5%;
+    color: #D9D9D9;
+    margin-top: 20px;
+    margin-left: 13px; ;
+}
+.p2{
+    margin-bottom: 20px;
+}
+.content-here{
+    width: 326px;
+    height: 231px;
+    margin-top: 25px;
+    border-radius: 10px;
+     background-color:#3D3F54;
+     border:#3D3F54 solid  ;
+}
+.content-here h4{
+    margin-top: 13px;
+    margin-left: 13px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFFD1;
+    opacity: 82%;
+}
+.content-hereinfo{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 23px;
+margin-top: 29px;
+margin-left: 13px;
+}
+.content-hereinfo ol{
+    display: flex;
+    gap: 25px;
+    color:#F5F5F5D4 ;
+    opacity: 83%;
+
+}
+.content-hereinfo ol i{
+    font-size: 20px;
+    color: #D9D9D9;
+}
+.content-hereinfo ol p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.fouter button{
+    width: 326px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #FF9A71;
+    font-size: 20px;
+    font-weight: 800px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFFD1 ;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.button :hover{
+    color: rgb(187, 183, 180);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: progress;
+}
+
+
+
+ /* page 2 start  */
+
+/* .page-2{ 
+    width: 393px;
+    height: 852px;
+    border-radius: 20px;
+    background-color: #252A40;
+    margin: 0 auto;
+}
+
+.picture-2{
+display: flex;
+flex-direction: vertical;
+width: 105px;
+height: 167px;
+margin-top: 20px;
+margin-left: 144px;
+gap: 16px;
+ border: white solid; 
+background-color: #F5F5F5;
+} 
+.img-2{
+
+}
+.img-content2{
+
+}
+.picture-2 h3{
+
+}
+.picture-2 p{
+
+}
+.icons-2{ */
+
+.fouter-2{
+    width: 326px;
+    height: 510px;
+    margin-top: 20px;
+    margin-left: 34px;
+    /* background-color: #3D3F54; */
+    border-radius: 21px;
+}
+.Experienceinfo{
+    width: 326px;
+    height: 434px;
+    background-color:#3D3F54 ;
+    border-radius: 8px;
+}
+.Experienceinfo h4{
+    margin-top: 13px;
+    margin-left: 13px;
+    font-size: 16px;
+    color: #F5F5F5;
+    opacity: 83%;
+}
+.verticalline{
+    width: 1px;
+    height: 370px;
+    background-color: silver;
+    margin-left: 13px;
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 42px;
+    background-color: #F5F5F5;
+    color: #FCFCFC;
+
+
+}
+.verticalline ol{
+    /* width: 12px;
+    height: 12px;
+    border-radius: 20px; */
+    /* background-color: #d4ccc9; */
+   
+    color: #D9D9D9;
+    font-size: 10px;
+    display: flex;
+
+}
+.flax{
+    display: flex;
+    gap: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 300px;
+}
+.flex h5{
+    font-size:13px;
+    color: #D9D9D9;
+    opacity: 87%;
+
+}
+.flex p{
+font-size: 13px;
+color: #FCFCFC;
+opacity: 80%;
+    
+}
+.buttons{
+    width: 326px;
+    height: 30px;
+}
+ .border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+table
+{
+    /* border-collapse: collapse; */
+    border: 2px solid rgb(2, 2, 2);
+    
+}
+
+th,td{
+    border: 2px solid black ;
+    padding: 7px; 
+}
+.max{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(rgb(110, 10, 10), green, blue, alpha);
+    box-shadow: 0 0 5px 2px rgba(5, 4, 4, 0.1);
+    backdrop-filter-blur;
+}
+.rex{
+     display: flex;
+    justify-content: center; 
+    list-style: none;
+    font-weight: 700px;
+    
+    /* background-color: #FF9A71; */
+
+    height:80px;
+    gap: 40px;
+    padding: 20px;
+}
+ .max li{
+    text-decoration: none;
+    color: black;
+    
+}
+.max li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(221, 166, 166);
+
+}
