@@ -377,14 +377,14 @@ th,td{
     
 
 }
-/* .PC{
+.PC{
     display: flex;
     justify-content: center;
     height: 4px;
     width: 60px;
     margin: 0 auto;
     background-color: black;
-} */
+}
 .PC ul{
     /* height: 40px;
     width: 30px; */
