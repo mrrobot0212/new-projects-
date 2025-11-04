@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+
+.nev-bar {
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(206, 206, 238);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+    /* backdrop-filter-blur; */
+    align-items: center;
+}
+
+.logo img {
+    height: 78px;
+    width: 78px;
+    border-radius: 30px;
+    margin-left: 9px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px 2px rgba(206, 108, 108, 0.4);
+}
+
+.manu-bar {
+    margin: 0 auto
+}
+
+.max {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 780;
+    font-style: italic;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+ .main-continer>li a {
+    text-decoration: none;
+    color: rgb(51, 42, 42);
+    padding: 10px 10px;
+     transition: 0.2s ease;
+
+}
+li{
+    transition: 0.3s ease-in-out;
+}
+ li:hover {
+    background-color: rgb(92, 141, 141);
+    border-radius: 13px;
+    box-shadow: 0 0 5px 2px rgba(207, 171, 171, 0.4);
+
+}
+
+li:hover>.dropdown-continer{
+display: block;
+
+
+}
+.dropdown-continer{
+    padding-top: 20px;
+    display: none;
+}
+
+.DROPDOWN{
+    position:absolute;
+     background-color:gray; 
+    height: 140px;
+    width: 130px;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(203, 213, 219);
+    /* margin-top: 16px; */
+    
+    
+
+}
+.DROPDOWN>li{
+    display: flex;
+    gap: 9px;
+    margin-left: 20px;
+    
+}
+.DROPDOWN li a{
+    color: rgb(2, 2, 2);
+    /* gap: px; */
+    margin: 7px 0;
+}
+.DROPDOWN:hover{
+    background-color: azure;
+    color: aliceblue;
+    column-gap: 20px;
+    border-radius: 19px;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+    
+
+}
+.DROPDOWN li :hover{
+    background-color: rgb(142, 187, 187);
+    padding: 8px 10px;
+    border-radius: 9px;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.9);
+}

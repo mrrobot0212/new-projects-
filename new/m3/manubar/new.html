@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manubar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: darkslategrey;
+        }
+
+        .main-manu {
+            height: 117px;
+            width: 100%;
+            display: flex;
+            background-color: rgb(158, 141, 141);
+            box-shadow: 0 0 5px 2px rgba(241, 163, 163, 0.9);
+        }
+
+        .logo img {
+            height: 89px;
+            width: 87px;
+            margin-top: 17px;
+            box-shadow: 0 0 5px 2px rgba(212, 191, 191, 0.9);
+            border-radius: 44px;
+
+
+
+        }
+
+        .manubar {
+            height: 100px;
+            width: 900px;
+            background-color: transparent;
+            margin: auto auto;
+            border-radius: 30px;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-continer {
+            display: flex;
+            gap: 70px;
+            justify-content: center;
+            margin: 30px;
+
+        }
+
+        .main-continer>li {
+            text-decoration: none;
+            list-style: none;
+
+        }
+
+        .main-container>li :hover {
+            background-color: gray;
+            padding: 10px 10px;
+            border-radius: 10px;
+
+        }
+
+        .main-continer>li a {
+            color: rgb(27, 24, 24);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .manubar-2 {
+            background-color: black;
+            width: 110px;
+            height: 180px;
+            display: none;
+           
+        }
+
+        .manubar-2 ul {
+            text-decoration: none;
+            list-style: none;
+            margin: 10px;
+            gap: 7px;
+            flex-direction: column;
+            display: flex;
+            
+
+        }
+
+        .manubar-2 li a {
+            text-decoration: none;
+            list-style: none;
+            color: aliceblue;
+            display: flex;
+            margin-left: 7px;
+            margin-top: 5px;
+            font-size: 14x;
+            
+        }
+
+        .rep li:hover {
+            background-color: rgb(42, 52, 61);
+            padding: 2px 7px;
+            border-radius: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            box-shadow: 0 0 5px 2px rgba(207, 171, 171, 0.4);
+            
+        }
+        
+        
+        .rep:hover .manubar-2{
+            display: block;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-manu">
+        <div class="logo">
+            <img src="Bmw Icons.png" alt="icon">
+        </div>
+        <div class="manubar">
+            <ul class="main-continer">
+                <li class="rep">
+                    <a href=""> bangla </a>
+                    <div class="manubar-2">
+                        <ul>
+                            <li>
+                                <a href=""> you</a>
+
+                            </li>
+                            <li>
+                                <a href="">are</a>
+                            </li>
+                            <li>
+                                <a href=""> and</a>
+                            </li>
+                            <li>
+                                <a href=""> disco</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="rep">
+                    <a href="">spanish</a>
+                </li>
+                <li class="rep"> 
+                    <a href=""> frenach</a>
+                </li>
+                <li class="rep">
+                    <a href=""> turkish</a>
+                </li>
+            </ul>
+        </div>
+        <div class="side-manu">
+        </div>
+    </div>
+</body>
+
+</html>

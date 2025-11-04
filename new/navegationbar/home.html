@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu practice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+            position: relative;
+        }
+
+        .navbar {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 70px;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .cta button {
+            padding: 10px 25px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #3a99ff;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+
+        /* hero section */
+        .hero-section {
+            background-color: #7c7979;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-container {
+            max-width: 600px;
+            height: 500px;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 50px;
+            transition: 0.5s ease;
+        }
+
+        .hero-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero-container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .hero-container:hover {
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .hover-menu {
+            width: 250px;
+            display: none;
+            background-color: #333;
+            padding: 20px 40px;
+            border-radius: 8px;
+
+            flex-direction: column;
+            gap: 20px;
+
+
+            position: absolute;
+            top: 20px;
+            left: 100%;
+        }
+
+
+        .hover-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        li:hover>.hover-menu {
+            display: flex;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: 0.3s ease;
+        }
+
+        .menu-icon:hover .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-icon:hover .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-icon:hover .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                padding: 15px 20px
+            }
+
+            .logo {
+                width: 50px;
+            }
+
+            .menu {
+                /* display: none; */
+                padding: 20px 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                left: 0;
+                top: -300px;
+                transition: 0.5s ease;
+            }
+
+            .menu li a {
+                color: white;
+            }
+
+            .cta {
+                display: none;
+            }
+
+            .menu-icon {
+                display: flex;
+                position: relative;
+                z-index: 500;
+            }
+
+            .menu-icon:hover+.menu {
+                top: 70px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="./logo.png" alt="Logo image">
+            </div>
+            <!-- mobile menu -->
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Services</a>
+
+                    <ul class="hover-menu">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li>
+                            <a href="#">Design</a>
+                            <ul class="hover-menu">
+                                <li><a href="#">Graphics Design</a></li>
+                                <li><a href="#">UI/UX Design</a></li>
+                                <li><a href="#">SEO</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Design</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="cta">
+                <button>Get Started</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+            <div class="hero-container">
+                <h1>Welcome to Our Website</h1>
+                <p>Your success is our commitment. Explore our services and offerings to find out how we can help you
+                    achieve your goals.</p>
+                <div class="cta">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
