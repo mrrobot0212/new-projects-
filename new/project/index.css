@@ -62,8 +62,8 @@ h2{
 
 }
 .sticky{
-    width: 200px;
-    height: 500px;
+    /* width: 200px; */
+    /* height: 500px; */
     border: 10px black solid;
     /* position: sticky;
     bottom: 0;; */
@@ -78,7 +78,7 @@ width: 40px;
 height: 50px;
 background-color: coral;
 position: sticky;
-bottom:0;
+bottom: 0;
 
 
 }
